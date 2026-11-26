@@ -1,0 +1,185 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    " in %@": {
+      "comment": "Where a config error is: “ in presets[1]”",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " in %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " in %@"
+          }
+        }
+      }
+    },
+    "Hangar: cannot read the key file": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangar: cannot read the key file"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangar: non riesco a leggere il file chiave"
+          }
+        }
+      }
+    },
+    "It may still ask you to sign in to Factory.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It may still ask you to sign in to Factory."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potrebbe chiedere comunque l'accesso a Factory."
+          }
+        }
+      }
+    },
+    "The terminal command exited with code %d.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The terminal command exited with code %d."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il comando del terminale è uscito con codice %d."
+          }
+        }
+      }
+    },
+    "The terminal command exited with code %d: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The terminal command exited with code %d: %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il comando del terminale è uscito con codice %d: %@"
+          }
+        }
+      }
+    },
+    "invalid JSON": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "invalid JSON"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JSON non valido"
+          }
+        }
+      }
+    },
+    "invalid JSON at line %@, column %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "invalid JSON at line %@, column %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JSON non valido alla riga %@, colonna %@"
+          }
+        }
+      }
+    },
+    "invalid URL": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "invalid URL"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URL non valido"
+          }
+        }
+      }
+    },
+    "invalid value%@": {
+      "comment": "Config error; the value is “ in <where>” or empty",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "invalid value%@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "valore non valido%@"
+          }
+        }
+      }
+    },
+    "missing field “%@”%@": {
+      "comment": "Config error; the second value is “ in <where>” or empty",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "missing field “%@”%@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "manca il campo «%@»%@"
+          }
+        }
+      }
+    },
+    "version %lld is not supported (this app reads version %lld)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "version %lld is not supported (this app reads version %lld)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "versione %lld non supportata (questa app legge la %lld)"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
