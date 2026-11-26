@@ -4,10 +4,28 @@
     " in %@": {
       "comment": "Where a config error is: “ in presets[1]”",
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " in %@"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": " in %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " en %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " dans %@"
           }
         },
         "it": {
@@ -20,10 +38,28 @@
     },
     "Hangar: cannot read the key file": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangar: Schlüsseldatei kann nicht gelesen werden"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Hangar: cannot read the key file"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangar: no se puede leer el archivo de clave"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangar : impossible de lire le fichier de clé"
           }
         },
         "it": {
@@ -36,10 +72,28 @@
     },
     "It may still ask you to sign in to Factory.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Möglicherweise wirst du trotzdem gebeten, dich bei Factory anzumelden."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "It may still ask you to sign in to Factory."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puede que aun así te pida iniciar sesión en Factory."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il peut quand même vous demander de vous connecter à Factory."
           }
         },
         "it": {
@@ -52,10 +106,28 @@
     },
     "The terminal command exited with code %d.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Terminalbefehl wurde mit Code %d beendet."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "The terminal command exited with code %d."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El comando del terminal terminó con el código %d."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La commande du terminal s’est terminée avec le code %d."
           }
         },
         "it": {
@@ -68,10 +140,28 @@
     },
     "The terminal command exited with code %d: %@": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Terminalbefehl wurde mit Code %d beendet: %@"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "The terminal command exited with code %d: %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El comando del terminal terminó con el código %d: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La commande du terminal s’est terminée avec le code %d : %@"
           }
         },
         "it": {
@@ -84,10 +174,28 @@
     },
     "invalid JSON": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ungültiges JSON"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "invalid JSON"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JSON no válido"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JSON non valide"
           }
         },
         "it": {
@@ -100,10 +208,28 @@
     },
     "invalid JSON at line %@, column %@": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ungültiges JSON in Zeile %@, Spalte %@"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "invalid JSON at line %@, column %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JSON no válido en la línea %@, columna %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JSON non valide à la ligne %@, colonne %@"
           }
         },
         "it": {
@@ -116,10 +242,28 @@
     },
     "invalid URL": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ungültige URL"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "invalid URL"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URL no válida"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URL non valide"
           }
         },
         "it": {
@@ -133,10 +277,28 @@
     "invalid value%@": {
       "comment": "Config error; the value is “ in <where>” or empty",
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ungültiger Wert%@"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "invalid value%@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "valor no válido%@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "valeur non valide%@"
           }
         },
         "it": {
@@ -150,10 +312,28 @@
     "missing field “%@”%@": {
       "comment": "Config error; the second value is “ in <where>” or empty",
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feld „%@“ fehlt%@"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "missing field “%@”%@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "falta el campo “%@”%@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "champ « %@ » manquant%@"
           }
         },
         "it": {
@@ -166,10 +346,28 @@
     },
     "version %lld is not supported (this app reads version %lld)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %lld wird nicht unterstützt (diese App liest Version %lld)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "version %lld is not supported (this app reads version %lld)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "la versión %lld no es compatible (esta app lee la versión %lld)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "la version %lld n’est pas prise en charge (cette app lit la version %lld)"
           }
         },
         "it": {

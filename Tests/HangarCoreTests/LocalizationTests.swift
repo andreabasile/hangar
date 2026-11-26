@@ -16,6 +16,8 @@ func current(_ key: String, _ arguments: any CVarArg...) throws -> String {
 }
 
 @Suite struct LocalizationTests {
+    static let languages: Set = ["de", "en", "es", "fr", "it"]
+
     /// Both String Catalogs, read from the source tree.
     static let catalogs = ["HangarCore", "Hangar"].map {
         URL(filePath: #filePath).deletingLastPathComponent().appending(path: "../../Sources/\($0)/Localizable.xcstrings")
@@ -25,14 +27,14 @@ func current(_ key: String, _ arguments: any CVarArg...) throws -> String {
         text.matches(of: /%(\d+\$)?(lld|ld|d|@|f)/).map { String($0.output.0) }
     }
 
-    @Test(arguments: catalogs) func everyKeyHasEnglishAndItalianWithTheSamePlaceholders(_ catalog: URL) throws {
+    @Test(arguments: catalogs) func everyKeyHasEveryLanguageWithTheSamePlaceholders(_ catalog: URL) throws {
         let json = try #require(try JSONSerialization.jsonObject(with: Data(contentsOf: catalog)) as? [String: Any])
         #expect(json["sourceLanguage"] as? String == "en")
         let entries = try #require(json["strings"] as? [String: [String: Any]])
         #expect(entries.count > 10)
         for (key, entry) in entries {
             let localizations = entry["localizations"] as? [String: [String: [String: String]]] ?? [:]
-            #expect(Set(localizations.keys) == ["en", "it"], "\(key): \(localizations.keys.sorted())")
+            #expect(Set(localizations.keys) == Self.languages, "\(key): \(localizations.keys.sorted())")
             for (language, unit) in localizations {
                 let value = unit["stringUnit"]?["value"] ?? ""
                 #expect(unit["stringUnit"]?["state"] == "translated", "\(language): \(key)")
@@ -42,13 +44,13 @@ func current(_ key: String, _ arguments: any CVarArg...) throws -> String {
         }
     }
 
-    @Test func compiledTablesHaveTheSameKeysInBothLanguages() throws {
+    @Test func compiledTablesHaveTheSameKeysInEveryLanguage() throws {
         func keys(_ language: String) throws -> Set<String> {
             let file = try #require(try strings(language).url(forResource: "Localizable", withExtension: "strings"))
             return Set(try #require(NSDictionary(contentsOf: file) as? [String: String]).keys)
         }
-        let english = try keys("en"), italian = try keys("it")
-        #expect(english == italian)
+        let english = try keys("en")
+        for language in Self.languages { #expect(try keys(language) == english, "\(language)") }
         #expect(english.contains("invalid URL"))
     }
 
@@ -68,8 +70,8 @@ func current(_ key: String, _ arguments: any CVarArg...) throws -> String {
     }
 
     @Test func theAppFollowsTheLanguageItIsRunIn() throws {
-        // what the app does at run time: plain lookups, in whichever of the two languages the system picked
-        #expect(["en", "it"].contains(Bundle.module.preferredLocalizations.first))
+        // what the app does at run time: plain lookups, in whichever language the system picked
+        #expect(Self.languages.contains(Bundle.module.preferredLocalizations.first ?? ""))
         #expect(LaunchPlan.keyFileMessage == (try current("Hangar: cannot read the key file")))
         #expect(Tool.droid.spec.serverNote == (try current("It may still ask you to sign in to Factory.")))
     }

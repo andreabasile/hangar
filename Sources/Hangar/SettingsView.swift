@@ -2,10 +2,96 @@ import AppKit
 import HangarCore
 import SwiftUI
 
-/// Only the terminal is a setting: the server is part of each preset.
+/// App-wide settings; the server is part of each preset.
 struct SettingsView: View {
     var body: some View {
-        TerminalPane().frame(width: 540)
+        TabView {
+            Tab("General", systemImage: "gearshape") { GeneralPane().frame(width: 540) }
+            Tab("Terminal", systemImage: "terminal") { TerminalPane().frame(width: 540) }
+        }
+    }
+}
+
+struct GeneralPane: View {
+    @Environment(LauncherModel.self) private var model
+    @State private var language = Language.saved
+
+    var body: some View {
+        Form {
+            Section {
+                Picker("Language", selection: $language) {
+                    Text("System Language").tag(String?.none)
+                    ForEach(Language.available, id: \.self) { code in
+                        // each language in its own name, so it can be found whatever the current one is
+                        Text(verbatim: Language.name(code)).tag(String?.some(code))
+                    }
+                }
+                .onChange(of: language) { Language.saved = language }
+            } footer: {
+                if language != Language.atLaunch {
+                    HStack {
+                        FooterText(String(localized: "Restart Hangar to use the new language."))
+                        Button("Restart Now", action: relaunch)
+                    }
+                } else {
+                    FooterText(String(localized: "The same choice as System Settings › General › Language & Region › Applications."))
+                }
+            }
+
+            Section {
+                LabeledContent("Folder") {
+                    Text(verbatim: (model.paths.root.path as NSString).abbreviatingWithTildeInPath)
+                        .font(.callout.monospaced())
+                        .textSelection(.enabled)
+                }
+                HStack {
+                    Spacer()
+                    Button("Show in Finder") { NSWorkspace.shared.activateFileViewerSelecting([model.paths.config]) }
+                    Button("Open config.json") { openConfig(model.paths.config) }
+                }
+            } header: {
+                Text("Configuration")
+            } footer: {
+                FooterText(String(localized: "Every change is saved to config.json at once, and edits made to the file in another editor show up here as soon as you save them."))
+            }
+        }
+        .formStyle(.grouped)
+        .fixedSize(horizontal: false, vertical: true)
+    }
+
+    private func relaunch() {
+        let configuration = NSWorkspace.OpenConfiguration()
+        configuration.createsNewApplicationInstance = true
+        NSWorkspace.shared.openApplication(at: Bundle.main.bundleURL, configuration: configuration) { _, error in
+            Task { @MainActor in
+                if error == nil { NSApp.terminate(nil) }
+            }
+        }
+    }
+}
+
+/// The app's own language: the `AppleLanguages` key in its defaults domain, which macOS reads at launch.
+@MainActor
+enum Language {
+    // a Set: `localizations` lists each language twice, once from Info.plist and once from its .lproj
+    static let available = Set(Bundle.main.localizations).subtracting(["Base"]).sorted()
+    static let atLaunch = saved
+
+    /// Read from the app's own domain only: the merged value would return the system's languages.
+    static var saved: String? {
+        get {
+            guard let domain = Bundle.main.bundleIdentifier else { return nil }
+            return (UserDefaults.standard.persistentDomain(forName: domain)?["AppleLanguages"] as? [String])?.first
+        }
+        set {
+            if let newValue { UserDefaults.standard.set([newValue], forKey: "AppleLanguages") }
+            else { UserDefaults.standard.removeObject(forKey: "AppleLanguages") }
+        }
+    }
+
+    static func name(_ code: String) -> String {
+        let name = Locale(identifier: code).localizedString(forLanguageCode: code) ?? code
+        return name.prefix(1).uppercased() + name.dropFirst()
     }
 }
 

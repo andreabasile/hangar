@@ -102,7 +102,10 @@ enum Snapshots {
                                       attempt: 180, isRunning: false, isPolling: false, gaveUp: true)
             try await main("codex-gpu", wide, dark: dark, "main-gpu-gave-up-\(suffix).png")
             try await main("claude-lmstudio", wide, dark: dark, "main-lmstudio-mismatch-\(suffix).png")
-            try await save(SettingsView().environment(model), title: String(localized: "Settings"), size: nil,
+            // one pane each: offscreen, the Settings TabView does not draw as a toolbar
+            try await save(GeneralPane().frame(width: 540).environment(model), title: String(localized: "General"), size: nil,
+                           dark: dark, to: folder.appending(path: "settings-general-\(suffix).png"))
+            try await save(TerminalPane().frame(width: 540).environment(model), title: String(localized: "Terminal"), size: nil,
                            dark: dark, to: folder.appending(path: "settings-terminal-\(suffix).png"))
             model.checks[gpu] = .init(status: .ok(models: ["qwen3-coder-30b"]), attempt: 1)
             try await main("opencode-gpu", wide, dark: dark, "main-unverified-server-\(suffix).png")
@@ -122,7 +125,7 @@ enum Snapshots {
             try await main("claude-lmstudio", wide, dark: dark, "main-small-context-\(dark ? "dark" : "light").png")
         }
         model.config.terminal.kind = .custom
-        try await save(SettingsView().environment(model), title: String(localized: "Settings"), size: nil, dark: false,
+        try await save(TerminalPane().frame(width: 540).environment(model), title: String(localized: "Terminal"), size: nil, dark: false,
                        to: folder.appending(path: "settings-terminal-custom-light.png"))
 
         // config.json broken before anything was loaded

@@ -3,10 +3,28 @@
   "strings": {
     "%@ does not allow separate accounts.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ erlaubt keine separaten Accounts."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "%@ does not allow separate accounts."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ no permite cuentas independientes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ne permet pas de comptes distincts."
           }
         },
         "it": {
@@ -19,10 +37,28 @@
     },
     "%@ is not installed": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ist nicht installiert"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "%@ is not installed"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ no está instalado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ n’est pas installé"
           }
         },
         "it": {
@@ -35,10 +71,28 @@
     },
     "%@ is not installed. To install it, in the terminal:": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ist nicht installiert. Zum Installieren im Terminal:"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "%@ is not installed. To install it, in the terminal:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ no está instalado. Para instalarlo, en el terminal:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ n’est pas installé. Pour l’installer, dans le terminal :"
           }
         },
         "it": {
@@ -51,10 +105,28 @@
     },
     "%@.\nFix it: the app reads it again as soon as you save it.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@.\nKorrigiere sie: Die App liest sie erneut, sobald du sie sicherst."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "%@.\nFix it: the app reads it again as soon as you save it."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@.\nCorrígelo: la app lo vuelve a leer en cuanto lo guardes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@.\nCorrigez-le : l’app le relit dès que vous l’enregistrez."
           }
         },
         "it": {
@@ -67,10 +139,28 @@
     },
     "%lld models available": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Modelle verfügbar"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "%lld models available"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld modelos disponibles"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld modèles disponibles"
           }
         },
         "it": {
@@ -83,10 +173,28 @@
     },
     "1 model available": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 Modell verfügbar"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "1 model available"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 modelo disponible"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 modèle disponible"
           }
         },
         "it": {
@@ -99,10 +207,28 @@
     },
     "Account": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Account"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuenta"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compte"
           }
         },
         "it": {
@@ -115,10 +241,28 @@
     },
     "Account folder: %@. On first launch %@ asks you to sign in. A separate account starts without your settings, MCP servers and plugins.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account-Ordner: %@. Beim ersten Start bittet dich %@, dich anzumelden. Ein separater Account startet ohne deine Einstellungen, MCP-Server und Plug-ins."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Account folder: %@. On first launch %@ asks you to sign in. A separate account starts without your settings, MCP servers and plugins."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carpeta de la cuenta: %@. En el primer inicio, %@ te pide que inicies sesión. Una cuenta independiente empieza sin tus ajustes, servidores MCP ni plugins."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dossier du compte : %@. Au premier lancement, %@ vous demande de vous connecter. Un compte distinct démarre sans vos réglages, serveurs MCP et plug-ins."
           }
         },
         "it": {
@@ -131,10 +275,28 @@
     },
     "Account “%@”": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account „%@“"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Account “%@”"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuenta “%@”"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compte « %@ »"
           }
         },
         "it": {
@@ -147,10 +309,28 @@
     },
     "Authentication": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Authentifizierung"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Authentication"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autenticación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Authentification"
           }
         },
         "it": {
@@ -163,10 +343,28 @@
     },
     "Below %@, Claude Code runs into “Autocompact is thrashing”": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unter %@ gerät Claude Code in „Autocompact is thrashing“"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Below %@, Claude Code runs into “Autocompact is thrashing”"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por debajo de %@, Claude Code da “Autocompact is thrashing”"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En dessous de %@, Claude Code tombe sur « Autocompact is thrashing »"
           }
         },
         "it": {
@@ -179,10 +377,28 @@
     },
     "Cancel": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Cancel"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuler"
           }
         },
         "it": {
@@ -195,10 +411,28 @@
     },
     "Check the path of the preset’s key file.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfe den Pfad der Schlüsseldatei des Presets."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Check the path of the preset’s key file."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revisa la ruta del archivo de clave del preajuste."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifiez le chemin du fichier de clé du préréglage."
           }
         },
         "it": {
@@ -211,10 +445,28 @@
     },
     "Check the preset’s key file.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfe die Schlüsseldatei des Presets."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Check the preset’s key file."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revisa el archivo de clave del preajuste."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifiez le fichier de clé du préréglage."
           }
         },
         "it": {
@@ -227,10 +479,28 @@
     },
     "Check the server URL.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfe die Server-URL."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Check the server URL."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revisa la URL del servidor."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifiez l’URL du serveur."
           }
         },
         "it": {
@@ -243,10 +513,28 @@
     },
     "Checking…": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird geprüft …"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Checking…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprobando…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérification…"
           }
         },
         "it": {
@@ -259,10 +547,28 @@
     },
     "Choose": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auswählen"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Choose"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elegir"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisir"
           }
         },
         "it": {
@@ -275,10 +581,28 @@
     },
     "Choose Another Folder…": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anderen Ordner auswählen …"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Choose Another Folder…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elegir otra carpeta…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisir un autre dossier…"
           }
         },
         "it": {
@@ -291,10 +615,28 @@
     },
     "Choose a preset in the sidebar, or create one with +.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle ein Preset in der Seitenleiste oder erstelle eines mit +."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Choose a preset in the sidebar, or create one with +."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige un preajuste en la barra lateral o crea uno con +."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisissez un préréglage dans la barre latérale ou créez-en un avec +."
           }
         },
         "it": {
@@ -307,10 +649,28 @@
     },
     "Choose the model": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modell auswählen"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Choose the model"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elegir el modelo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisir le modèle"
           }
         },
         "it": {
@@ -323,10 +683,28 @@
     },
     "Choose the model from the server’s list": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modell aus der Liste des Servers auswählen"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Choose the model from the server’s list"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elegir el modelo de la lista del servidor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisir le modèle dans la liste du serveur"
           }
         },
         "it": {
@@ -339,10 +717,28 @@
     },
     "Choose…": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auswählen …"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Choose…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elegir…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisir…"
           }
         },
         "it": {
@@ -355,10 +751,28 @@
     },
     "Command": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Befehl"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Command"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comando"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commande"
           }
         },
         "it": {
@@ -369,12 +783,64 @@
         }
       }
     },
+    "Configuration": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konfiguration"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Configuration"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Configuración"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Configuration"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Configurazione"
+          }
+        }
+      }
+    },
     "Connection not checked": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbindung nicht geprüft"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Connection not checked"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conexión sin comprobar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connexion non vérifiée"
           }
         },
         "it": {
@@ -387,10 +853,28 @@
     },
     "Context": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontext"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Context"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contexto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contexte"
           }
         },
         "it": {
@@ -403,10 +887,28 @@
     },
     "Context (tokens)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontext (Tokens)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Context (tokens)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contexto (tokens)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contexte (tokens)"
           }
         },
         "it": {
@@ -419,10 +921,28 @@
     },
     "Copied": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopiert"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Copied"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copié"
           }
         },
         "it": {
@@ -435,10 +955,28 @@
     },
     "Copy": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieren"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Copy"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier"
           }
         },
         "it": {
@@ -451,10 +989,28 @@
     },
     "Copy Command": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Befehl kopieren"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Copy Command"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar comando"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier la commande"
           }
         },
         "it": {
@@ -467,10 +1023,28 @@
     },
     "Copy the command (⇧⌘C)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Befehl kopieren (⇧⌘C)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Copy the command (⇧⌘C)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar el comando (⇧⌘C)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier la commande (⇧⌘C)"
           }
         },
         "it": {
@@ -483,10 +1057,28 @@
     },
     "Couldn’t move %@ to %@: %@": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ konnte nicht nach %@ bewegt werden: %@"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t move %@ to %@: %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido mover %@ a %@: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de déplacer %@ vers %@ : %@"
           }
         },
         "it": {
@@ -499,10 +1091,28 @@
     },
     "Couldn’t move the configuration": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Konfiguration konnte nicht bewegt werden"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t move the configuration"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido mover la configuración"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de déplacer la configuration"
           }
         },
         "it": {
@@ -515,10 +1125,28 @@
     },
     "Couldn’t open the terminal": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Terminal konnte nicht geöffnet werden"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t open the terminal"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido abrir el terminal"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d’ouvrir le terminal"
           }
         },
         "it": {
@@ -531,10 +1159,28 @@
     },
     "Couldn’t prepare the command": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Befehl konnte nicht vorbereitet werden"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t prepare the command"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido preparar el comando"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de préparer la commande"
           }
         },
         "it": {
@@ -547,10 +1193,28 @@
     },
     "Couldn’t save config.json": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.json konnte nicht gesichert werden"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t save config.json"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido guardar config.json"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d’enregistrer config.json"
           }
         },
         "it": {
@@ -563,10 +1227,28 @@
     },
     "Custom command": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eigener Befehl"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Custom command"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comando personalizado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commande personnalisée"
           }
         },
         "it": {
@@ -579,10 +1261,28 @@
     },
     "Default": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Default"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Predeterminada"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Par défaut"
           }
         },
         "it": {
@@ -595,10 +1295,28 @@
     },
     "Default account": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard-Account"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Default account"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuenta predeterminada"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compte par défaut"
           }
         },
         "it": {
@@ -611,10 +1329,28 @@
     },
     "Delete": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löschen"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Delete"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer"
           }
         },
         "it": {
@@ -627,10 +1363,28 @@
     },
     "Delete the preset (⌫)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preset löschen (⌫)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Delete the preset (⌫)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar el preajuste (⌫)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer le préréglage (⌫)"
           }
         },
         "it": {
@@ -643,10 +1397,28 @@
     },
     "Delete “%@”?": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„%@“ löschen?"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Delete “%@”?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Eliminar “%@”?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer « %@ » ?"
           }
         },
         "it": {
@@ -659,10 +1431,28 @@
     },
     "Delete…": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löschen …"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Delete…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer…"
           }
         },
         "it": {
@@ -675,10 +1465,28 @@
     },
     "Duplicate": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duplizieren"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Duplicate"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duplicar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dupliquer"
           }
         },
         "it": {
@@ -691,10 +1499,28 @@
     },
     "Duplicate the preset (⌘D)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preset duplizieren (⌘D)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Duplicate the preset (⌘D)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duplicar el preajuste (⌘D)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dupliquer le préréglage (⌘D)"
           }
         },
         "it": {
@@ -707,10 +1533,28 @@
     },
     "Edit Server URL": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server-URL bearbeiten"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Edit Server URL"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar la URL del servidor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier l’URL du serveur"
           }
         },
         "it": {
@@ -721,12 +1565,64 @@
         }
       }
     },
+    "Every change is saved to config.json at once, and edits made to the file in another editor show up here as soon as you save them.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jede Änderung wird sofort in config.json gesichert, und Änderungen an der Datei in einem anderen Editor erscheinen hier, sobald du sie sicherst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every change is saved to config.json at once, and edits made to the file in another editor show up here as soon as you save them."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada cambio se guarda al momento en config.json, y los cambios hechos en el archivo con otro editor aparecen aquí en cuanto los guardas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque modification est enregistrée aussitôt dans config.json, et les modifications faites au fichier dans un autre éditeur apparaissent ici dès que vous les enregistrez."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni modifica viene salvata subito in config.json, e le modifiche fatte al file con un altro editor compaiono qui appena le salvi."
+          }
+        }
+      }
+    },
     "Experimental support: this command has not been tried with %@ yet.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Experimentelle Unterstützung: Dieser Befehl wurde mit %@ noch nicht ausprobiert."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Experimental support: this command has not been tried with %@ yet."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compatibilidad experimental: este comando aún no se ha probado con %@."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prise en charge expérimentale : cette commande n’a pas encore été essayée avec %@."
           }
         },
         "it": {
@@ -739,10 +1635,28 @@
     },
     "Extra arguments": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zusätzliche Argumente"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Extra arguments"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Argumentos adicionales"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arguments supplémentaires"
           }
         },
         "it": {
@@ -755,10 +1669,28 @@
     },
     "Fix the file: until it is valid, the fields are locked. Launching still works.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Korrigiere die Datei: Bis sie gültig ist, sind die Felder gesperrt. Starten funktioniert weiterhin."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Fix the file: until it is valid, the fields are locked. Launching still works."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrige el archivo: hasta que sea válido, los campos están bloqueados. El inicio sigue funcionando."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrigez le fichier : tant qu’il n’est pas valide, les champs sont verrouillés. Le lancement fonctionne toujours."
           }
         },
         "it": {
@@ -769,12 +1701,98 @@
         }
       }
     },
+    "Folder": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordner"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Folder"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carpeta"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dossier"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cartella"
+          }
+        }
+      }
+    },
+    "General": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allgemein"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Général"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generali"
+          }
+        }
+      }
+    },
     "Give the account a name: presets with the same name share the login.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gib dem Account einen Namen: Presets mit demselben Namen teilen sich die Anmeldung."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Give the account a name: presets with the same name share the login."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ponle un nombre a la cuenta: los preajustes con el mismo nombre comparten el inicio de sesión."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Donnez un nom au compte : les préréglages qui portent le même nom partagent la connexion."
           }
         },
         "it": {
@@ -787,7 +1805,25 @@
     },
     "Hangar": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangar"
+          }
+        },
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangar"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangar"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Hangar"
@@ -803,10 +1839,28 @@
     },
     "Installed": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installiert"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Installed"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instalados"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installés"
           }
         },
         "it": {
@@ -819,10 +1873,28 @@
     },
     "Invalid config.json": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.json ungültig"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Invalid config.json"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.json no válido"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.json non valide"
           }
         },
         "it": {
@@ -835,10 +1907,28 @@
     },
     "It was in an older version’s format: I saved it as %@ and restored the default configuration.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sie hatte das Format einer älteren Version: Ich habe sie als %@ gesichert und die Standardkonfiguration wiederhergestellt."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "It was in an older version’s format: I saved it as %@ and restored the default configuration."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estaba en el formato de una versión anterior: lo he guardado como %@ y he restaurado la configuración predeterminada."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il était au format d’une version précédente : je l’ai enregistré sous %@ et j’ai rétabli la configuration par défaut."
           }
         },
         "it": {
@@ -851,10 +1941,28 @@
     },
     "Key File": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schlüsseldatei"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Key File"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivo de clave"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fichier de clé"
           }
         },
         "it": {
@@ -867,10 +1975,28 @@
     },
     "Key file": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schlüsseldatei"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Key file"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivo de clave"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fichier de clé"
           }
         },
         "it": {
@@ -883,10 +2009,28 @@
     },
     "Key file not readable": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schlüsseldatei nicht lesbar"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Key file not readable"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivo de clave ilegible"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fichier de clé illisible"
           }
         },
         "it": {
@@ -899,10 +2043,28 @@
     },
     "Key refused (401)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schlüssel abgelehnt (401)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Key refused (401)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clave rechazada (401)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clé refusée (401)"
           }
         },
         "it": {
@@ -913,12 +2075,64 @@
         }
       }
     },
+    "Language": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprache"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Langue"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lingua"
+          }
+        }
+      }
+    },
     "Launch": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starten"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Launch"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iniciar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lancer"
           }
         },
         "it": {
@@ -931,10 +2145,28 @@
     },
     "Launch %@ in the terminal (⌘↩)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ im Terminal starten (⌘↩)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Launch %@ in the terminal (⌘↩)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iniciar %@ en el terminal (⌘↩)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lancer %@ dans le terminal (⌘↩)"
           }
         },
         "it": {
@@ -947,10 +2179,28 @@
     },
     "Load Models from the Server": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelle vom Server laden"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Load Models from the Server"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cargar los modelos del servidor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Charger les modèles depuis le serveur"
           }
         },
         "it": {
@@ -963,10 +2213,28 @@
     },
     "Missing URL": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URL fehlt"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Missing URL"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falta la URL"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URL manquante"
           }
         },
         "it": {
@@ -979,10 +2247,28 @@
     },
     "Missing account name": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account-Name fehlt"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Missing account name"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falta el nombre de la cuenta"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom du compte manquant"
           }
         },
         "it": {
@@ -995,10 +2281,28 @@
     },
     "Missing key file": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schlüsseldatei fehlt"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Missing key file"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falta el archivo de clave"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fichier de clé manquant"
           }
         },
         "it": {
@@ -1011,10 +2315,28 @@
     },
     "Missing model": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modell fehlt"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Missing model"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falta el modelo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modèle manquant"
           }
         },
         "it": {
@@ -1027,10 +2349,28 @@
     },
     "Missing terminal command": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminalbefehl fehlt"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Missing terminal command"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falta el comando del terminal"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commande du terminal manquante"
           }
         },
         "it": {
@@ -1043,7 +2383,25 @@
     },
     "Mode": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modus"
+          }
+        },
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Mode"
@@ -1059,10 +2417,28 @@
     },
     "Model": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modell"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Model"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modèle"
           }
         },
         "it": {
@@ -1075,10 +2451,28 @@
     },
     "Model Server": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modellserver"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Model Server"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Servidor del modelo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serveur du modèle"
           }
         },
         "it": {
@@ -1091,10 +2485,28 @@
     },
     "Model loading (503)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modell wird geladen (503)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Model loading (503)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo cargándose (503)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modèle en cours de chargement (503)"
           }
         },
         "it": {
@@ -1107,10 +2519,28 @@
     },
     "Name": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Name"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom"
           }
         },
         "it": {
@@ -1123,10 +2553,28 @@
     },
     "New Preset": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neues Preset"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "New Preset"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo preajuste"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouveau préréglage"
           }
         },
         "it": {
@@ -1139,10 +2587,28 @@
     },
     "New preset": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neues Preset"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "New preset"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo preajuste"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouveau préréglage"
           }
         },
         "it": {
@@ -1155,10 +2621,28 @@
     },
     "New preset (⌘N)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neues Preset (⌘N)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "New preset (⌘N)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo preajuste (⌘N)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouveau préréglage (⌘N)"
           }
         },
         "it": {
@@ -1171,10 +2655,28 @@
     },
     "No Preset Selected": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein Preset ausgewählt"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "No Preset Selected"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ningún preajuste seleccionado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun préréglage sélectionné"
           }
         },
         "it": {
@@ -1187,10 +2689,28 @@
     },
     "No URL": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine URL"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "No URL"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin URL"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucune URL"
           }
         },
         "it": {
@@ -1203,10 +2723,28 @@
     },
     "No answer within 10 seconds: the pod may still be starting, be off, or the URL is wrong.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine Antwort innerhalb von 10 Sekunden: Der Pod startet vielleicht noch, ist aus, oder die URL ist falsch."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "No answer within 10 seconds: the pod may still be starting, be off, or the URL is wrong."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin respuesta en 10 segundos: puede que el pod aún esté arrancando o apagado, o que la URL sea incorrecta."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucune réponse en 10 secondes : le pod est peut-être encore en démarrage ou éteint, ou l’URL est erronée."
           }
         },
         "it": {
@@ -1219,10 +2757,28 @@
     },
     "None": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "None"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ninguna"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucune"
           }
         },
         "it": {
@@ -1235,10 +2791,28 @@
     },
     "Not Installed": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht installiert"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Not Installed"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No instalados"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non installés"
           }
         },
         "it": {
@@ -1251,7 +2825,25 @@
     },
     "OK": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "OK"
@@ -1267,10 +2859,28 @@
     },
     "Open config.json": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.json öffnen"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Open config.json"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir config.json"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir config.json"
           }
         },
         "it": {
@@ -1283,10 +2893,28 @@
     },
     "Open in": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffnen in"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Open in"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir en"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir dans"
           }
         },
         "it": {
@@ -1299,10 +2927,28 @@
     },
     "Opens the generated script (.command) with open -a Terminal, without automation permissions.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffnet das erzeugte Skript (.command) mit open -a Terminal, ohne Automatisierungsrechte."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Opens the generated script (.command) with open -a Terminal, without automation permissions."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abre el script generado (.command) con open -a Terminal, sin permisos de automatización."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvre le script généré (.command) avec open -a Terminal, sans autorisation d’automatisation."
           }
         },
         "it": {
@@ -1315,10 +2961,28 @@
     },
     "Preset": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preset"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Preset"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preajuste"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Préréglage"
           }
         },
         "it": {
@@ -1331,10 +2995,28 @@
     },
     "Reachable": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreichbar"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Reachable"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accesible"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accessible"
           }
         },
         "it": {
@@ -1347,10 +3029,28 @@
     },
     "Reachable and authorized": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreichbar und autorisiert"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Reachable and authorized"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accesible y autorizado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accessible et autorisé"
           }
         },
         "it": {
@@ -1363,10 +3063,28 @@
     },
     "Recent Folders": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Letzte Ordner"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Recent Folders"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carpetas recientes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dossiers récents"
           }
         },
         "it": {
@@ -1379,10 +3097,28 @@
     },
     "Refresh the List": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste aktualisieren"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Refresh the List"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actualizar la lista"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actualiser la liste"
           }
         },
         "it": {
@@ -1393,12 +3129,98 @@
         }
       }
     },
+    "Restart Hangar to use the new language.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starte Hangar neu, um die neue Sprache zu verwenden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restart Hangar to use the new language."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reinicia Hangar para usar el nuevo idioma."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redémarrez Hangar pour utiliser la nouvelle langue."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riavvia Hangar per usare la nuova lingua."
+          }
+        }
+      }
+    },
+    "Restart Now": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jetzt neu starten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restart Now"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reiniciar ahora"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redémarrer maintenant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riavvia ora"
+          }
+        }
+      }
+    },
     "Run with /bin/sh, which has no Homebrew PATH: use absolute paths. It must return at once: open -a …, or end with &. Placeholders: {script} is the generated script, {dir} the working folder.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird mit /bin/sh ausgeführt, das den PATH von Homebrew nicht kennt: Verwende absolute Pfade. Er muss sofort zurückkehren: open -a … oder mit & enden. Platzhalter: {script} ist das erzeugte Skript, {dir} der Arbeitsordner."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Run with /bin/sh, which has no Homebrew PATH: use absolute paths. It must return at once: open -a …, or end with &. Placeholders: {script} is the generated script, {dir} the working folder."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se ejecuta con /bin/sh, que no tiene el PATH de Homebrew: usa rutas absolutas. Debe volver enseguida: open -a …, o terminar con &. Marcadores: {script} es el script generado, {dir} la carpeta de trabajo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exécutée avec /bin/sh, qui n’a pas le PATH de Homebrew : utilisez des chemins absolus. Elle doit rendre la main aussitôt : open -a …, ou se terminer par &. Variables : {script} est le script généré, {dir} le dossier de travail."
           }
         },
         "it": {
@@ -1411,10 +3233,28 @@
     },
     "Separate": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Separat"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Separate"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Independiente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distinct"
           }
         },
         "it": {
@@ -1427,10 +3267,28 @@
     },
     "Separate account": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Separater Account"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Separate account"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuenta independiente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compte distinct"
           }
         },
         "it": {
@@ -1443,10 +3301,28 @@
     },
     "Server": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Server"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Servidor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serveur"
           }
         },
         "it": {
@@ -1459,10 +3335,28 @@
     },
     "Server Models": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelle des Servers"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Server Models"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelos del servidor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modèles du serveur"
           }
         },
         "it": {
@@ -1475,10 +3369,28 @@
     },
     "Server ready": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server bereit"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Server ready"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Servidor listo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serveur prêt"
           }
         },
         "it": {
@@ -1491,10 +3403,28 @@
     },
     "Settings": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einstellungen"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Settings"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réglages"
           }
         },
         "it": {
@@ -1507,10 +3437,28 @@
     },
     "Show in Finder": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Im Finder anzeigen"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Show in Finder"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar en el Finder"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher dans le Finder"
           }
         },
         "it": {
@@ -1523,10 +3471,28 @@
     },
     "Still no answer after 30 minutes": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach 30 Minuten immer noch keine Antwort"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Still no answer after 30 minutes"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sigue sin responder tras 30 minutos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toujours aucune réponse après 30 minutes"
           }
         },
         "it": {
@@ -1539,10 +3505,28 @@
     },
     "Stop": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stoppen"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Stop"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Detener"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrêter"
           }
         },
         "it": {
@@ -1553,9 +3537,61 @@
         }
       }
     },
+    "System Language": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Systemsprache"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System Language"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma del sistema"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Langue du système"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lingua di sistema"
+          }
+        }
+      }
+    },
     "Terminal": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminal"
+          }
+        },
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminal"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminal"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Terminal"
@@ -1564,17 +3600,35 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Terminal"
+            "value": "Terminale"
           }
         }
       }
     },
     "Test Connection": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbindung testen"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Test Connection"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probar la conexión"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tester la connexion"
           }
         },
         "it": {
@@ -1587,10 +3641,28 @@
     },
     "The folder doesn’t exist": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Ordner existiert nicht"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "The folder doesn’t exist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La carpeta no existe"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le dossier n’existe pas"
           }
         },
         "it": {
@@ -1603,10 +3675,28 @@
     },
     "The key never appears: the app passes only the file’s path, read at launch.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Schlüssel erscheint nie: Die App übergibt nur den Pfad der Datei, die beim Start gelesen wird."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "The key never appears: the app passes only the file’s path, read at launch."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La clave nunca aparece: la app solo pasa la ruta del archivo, que se lee al iniciar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La clé n’apparaît jamais : l’app ne transmet que le chemin du fichier, lu au lancement."
           }
         },
         "it": {
@@ -1619,10 +3709,28 @@
     },
     "The pod may still be starting, be off, or the URL is wrong (%@)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Pod startet vielleicht noch, ist aus, oder die URL ist falsch (%@)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "The pod may still be starting, be off, or the URL is wrong (%@)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puede que el pod aún esté arrancando o apagado, o que la URL sea incorrecta (%@)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le pod est peut-être encore en démarrage ou éteint, ou l’URL est erronée (%@)"
           }
         },
         "it": {
@@ -1635,10 +3743,28 @@
     },
     "The preset is removed from config.json.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Preset wird aus config.json entfernt."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "The preset is removed from config.json."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El preajuste se quita de config.json."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le préréglage est retiré de config.json."
           }
         },
         "it": {
@@ -1649,12 +3775,64 @@
         }
       }
     },
+    "The same choice as System Settings › General › Language & Region › Applications.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dieselbe Auswahl wie Systemeinstellungen › Allgemein › Sprache & Region › Apps."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The same choice as System Settings › General › Language & Region › Applications."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La misma opción que Ajustes del Sistema › General › Idioma y región › Aplicaciones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le même choix que Réglages Système › Général › Langue et région › Applications."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "È la stessa scelta di Impostazioni di Sistema › Generali › Lingua e zona › Applicazioni."
+          }
+        }
+      }
+    },
     "The server answers but isn’t ready yet.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Server antwortet, ist aber noch nicht bereit."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "The server answers but isn’t ready yet."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El servidor responde, pero aún no está listo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le serveur répond mais n’est pas encore prêt."
           }
         },
         "it": {
@@ -1667,10 +3845,28 @@
     },
     "The server isn’t answering yet": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Server antwortet noch nicht"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "The server isn’t answering yet"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El servidor aún no responde"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le serveur ne répond pas encore"
           }
         },
         "it": {
@@ -1683,10 +3879,28 @@
     },
     "The server root, without /v1.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Stamm-URL des Servers, ohne /v1."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "The server root, without /v1."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La raíz del servidor, sin /v1."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La racine du serveur, sans /v1."
           }
         },
         "it": {
@@ -1699,10 +3913,28 @@
     },
     "Tool": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tool"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Tool"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herramienta"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Outil"
           }
         },
         "it": {
@@ -1715,7 +3947,25 @@
     },
     "URL": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URL"
+          }
+        },
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URL"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URL"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "URL"
@@ -1731,10 +3981,28 @@
     },
     "Unexpected response (HTTP %lld)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unerwartete Antwort (HTTP %lld)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Unexpected response (HTTP %lld)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Respuesta inesperada (HTTP %lld)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réponse inattendue (HTTP %lld)"
           }
         },
         "it": {
@@ -1747,10 +4015,28 @@
     },
     "Untitled": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ohne Titel"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Untitled"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin título"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans titre"
           }
         },
         "it": {
@@ -1763,10 +4049,28 @@
     },
     "Use “%@”": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„%@“ verwenden"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Use “%@”"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar “%@”"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utiliser « %@ »"
           }
         },
         "it": {
@@ -1780,10 +4084,28 @@
     "Uses the login and settings %@ is already set up with%@.": {
       "comment": "The second value is “ (~/.claude)” or empty",
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwendet die Anmeldung und die Einstellungen, mit denen %@ bereits eingerichtet ist%@."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Uses the login and settings %@ is already set up with%@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa el inicio de sesión y los ajustes con los que %@ ya está configurado%@."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise la connexion et les réglages déjà configurés pour %@%@."
           }
         },
         "it": {
@@ -1796,10 +4118,28 @@
     },
     "Waiting for the server": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warten auf den Server"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Waiting for the server"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esperando al servidor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En attente du serveur"
           }
         },
         "it": {
@@ -1812,10 +4152,28 @@
     },
     "Waiting for the server… (attempt %lld)": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warten auf den Server … (Versuch %lld)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Waiting for the server… (attempt %lld)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esperando al servidor… (intento %lld)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En attente du serveur… (tentative %lld)"
           }
         },
         "it": {
@@ -1828,10 +4186,28 @@
     },
     "Without authentication, Claude Code gets the dummy key “%@”, since it wants one.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ohne Authentifizierung erhält Claude Code den Platzhalterschlüssel „%@“, da es einen verlangt."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Without authentication, Claude Code gets the dummy key “%@”, since it wants one."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin autenticación, Claude Code recibe la clave ficticia “%@”, porque necesita una."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans authentification, Claude Code reçoit la clé factice « %@ », car il en exige une."
           }
         },
         "it": {
@@ -1844,10 +4220,28 @@
     },
     "Without authentication, no key is sent.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ohne Authentifizierung wird kein Schlüssel gesendet."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Without authentication, no key is sent."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin autenticación, no se envía ninguna clave."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans authentification, aucune clé n’est envoyée."
           }
         },
         "it": {
@@ -1860,10 +4254,28 @@
     },
     "Working folder": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitsordner"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Working folder"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carpeta de trabajo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dossier de travail"
           }
         },
         "it": {
@@ -1876,10 +4288,28 @@
     },
     "Working folder. You can also drag a folder onto it from the Finder.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitsordner. Du kannst auch einen Ordner aus dem Finder hierher ziehen."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Working folder. You can also drag a folder onto it from the Finder."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carpeta de trabajo. También puedes arrastrar aquí una carpeta desde el Finder."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dossier de travail. Vous pouvez aussi y faire glisser un dossier depuis le Finder."
           }
         },
         "it": {
@@ -1892,10 +4322,28 @@
     },
     "Writes one Tab Config per preset to ~/.warp/tab_configs and opens it in a new window with warp://tab_config. The configs also appear in Warp’s + menu.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schreibt eine Tab Config pro Preset nach ~/.warp/tab_configs und öffnet sie in einem neuen Fenster mit warp://tab_config. Die Konfigurationen erscheinen auch im +-Menü von Warp."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Writes one Tab Config per preset to ~/.warp/tab_configs and opens it in a new window with warp://tab_config. The configs also appear in Warp’s + menu."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escribe una Tab Config por preajuste en ~/.warp/tab_configs y la abre en una ventana nueva con warp://tab_config. Las configuraciones también aparecen en el menú + de Warp."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Écrit une Tab Config par préréglage dans ~/.warp/tab_configs et l’ouvre dans une nouvelle fenêtre avec warp://tab_config. Les configurations apparaissent aussi dans le menu + de Warp."
           }
         },
         "it": {
@@ -1908,10 +4356,28 @@
     },
     "config.json is not valid: %@": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.json ist ungültig: %@"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "config.json is not valid: %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.json no es válido: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.json n’est pas valide : %@"
           }
         },
         "it": {
@@ -1924,10 +4390,28 @@
     },
     "config.json replaced": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.json ersetzt"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "config.json replaced"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.json sustituido"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.json remplacé"
           }
         },
         "it": {
@@ -1940,10 +4424,28 @@
     },
     "e.g. work": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "z. B. arbeit"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "e.g. work"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p. ej., trabajo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p. ex. travail"
           }
         },
         "it": {
@@ -1956,10 +4458,28 @@
     },
     "model alias": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modell-Alias"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "model alias"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "alias del modelo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "alias du modèle"
           }
         },
         "it": {
@@ -1972,10 +4492,28 @@
     },
     "optional, e.g. --resume": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "optional, z. B. --resume"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "optional, e.g. --resume"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "opcionales, p. ej., --resume"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "facultatifs, p. ex. --resume"
           }
         },
         "it": {
@@ -1988,10 +4526,28 @@
     },
     "tool default": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard des Tools"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "tool default"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "predeterminado de la herramienta"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "valeur par défaut de l’outil"
           }
         },
         "it": {
@@ -2005,10 +4561,28 @@
     "work": {
       "comment": "A sample account name in the screenshots",
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "arbeit"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "work"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "trabajo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "travail"
           }
         },
         "it": {
@@ -2021,10 +4595,28 @@
     },
     "“%@” is not among the server’s models": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„%@“ ist nicht unter den Modellen des Servers"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "“%@” is not among the server’s models"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@” no está entre los modelos del servidor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« %@ » ne fait pas partie des modèles du serveur"
           }
         },
         "it": {
