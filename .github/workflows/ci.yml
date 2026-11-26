@@ -6,7 +6,8 @@ on:
 
 jobs:
   test:
-    runs-on: macos-latest
+    # Xcode 27 is the first whose `swift build` compiles String Catalogs; older ones only copy them
+    runs-on: xcode-27
     steps:
       - uses: actions/checkout@v4
       - uses: maxim-lobanov/setup-xcode@v1

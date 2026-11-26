@@ -34,7 +34,8 @@ that the server answers, and opens a terminal in the folder you pick.
 ## Requirements
 
 - macOS 15 or later.
-- A Swift 6 toolchain to build (Xcode 16 or later, or the matching command line tools).
+- Xcode 27 or later to build (Swift 6.4). Older versions copy the String Catalogs instead of compiling them, so the
+  app would have no translations and the tests fail.
 - The tools you want on your shell's `PATH`. Hangar asks your shell where they are (as an interactive login shell,
   like a terminal), lists missing tools apart in the tool menu and shows their install command.
 - For server presets, a model server that speaks the Anthropic Messages API (for Claude Code) or the OpenAI Responses
