@@ -41,9 +41,19 @@ that the server answers, and opens a terminal in the folder you pick.
 - For server presets, a model server that speaks the Anthropic Messages API (for Claude Code) or the OpenAI Responses
   API (for Codex). LM Studio and recent llama-server builds speak both.
 
-## Build and install
+## Install
 
-There is no prebuilt download yet. Clone the repository and build the app:
+With [Homebrew](https://brew.sh):
+
+```sh
+brew install --cask andreabasile/tap/hangar
+```
+
+Update it with `brew update && brew upgrade --cask hangar`. Or download the DMG from
+[Releases](https://github.com/andreabasile/hangar/releases) and drag Hangar into Applications. The app is signed ad
+hoc and not notarized: on first launch right-click it and choose Open (the Homebrew cask does this for you).
+
+## Build from source
 
 ```sh
 git clone https://github.com/andreabasile/hangar.git
@@ -53,7 +63,8 @@ cd hangar
 ```
 
 The app is signed ad hoc, which is enough to run it on the Mac that built it. To sign with your own identity, set
-`HANGAR_SIGN_IDENTITY` to its name.
+`HANGAR_SIGN_IDENTITY` to its name. `./scripts/release.sh X.Y.Z` tags a release: the release workflow builds the DMG,
+publishes it and updates the cask in [andreabasile/homebrew-tap](https://github.com/andreabasile/homebrew-tap).
 
 ## Presets
 
