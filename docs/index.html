@@ -155,7 +155,7 @@
     <a class="brand" href="./"><img src="icon.png" alt="" width="36" height="36">Hangar</a>
     <nav aria-label="Page">
       <a href="#tools">Tools</a>
-      <a href="#build">Build</a>
+      <a href="#build">Install</a>
       <a href="https://github.com/andreabasile/hangar">GitHub</a>
     </nav>
   </header>
@@ -166,7 +166,7 @@
       <p>Hangar is a native macOS app that opens Claude Code, Codex and 17 other CLIs in your terminal: with your usual login, a separate account, or a model server you run yourself.</p>
       <div class="actions">
         <a class="button primary" href="https://github.com/andreabasile/hangar">View on GitHub</a>
-        <a class="button secondary" href="#build">Build it</a>
+        <a class="button secondary" href="#build">Install it</a>
       </div>
     </div>
 
@@ -244,15 +244,13 @@
     </section>
 
     <section id="build" aria-labelledby="build-title">
-      <h2 id="build-title">Build it</h2>
-      <p class="lede">There is no download yet: build Hangar from source.</p>
+      <h2 id="build-title">Install it</h2>
+      <p class="lede">Install Hangar with Homebrew, or build it from source.</p>
       <ol class="steps">
-        <li><div><p>Clone the repository.</p><pre><code>git clone https://github.com/andreabasile/hangar.git
-cd hangar</code></pre></div></li>
-        <li><div><p>Build the app, copy it to Applications and open it.</p><pre><code>./scripts/build-app.sh --install</code></pre></div></li>
+        <li><div><p>Install the app with Homebrew.</p><pre><code>brew install --cask andreabasile/tap/hangar</code></pre></div></li>
         <li><div><p>Pick a preset, choose a working folder and press ⌘↩.</p></div></li>
       </ol>
-      <p class="requires">Hangar runs on macOS 15 or later; building it takes Xcode 27 or later. The app is signed ad hoc on your Mac.</p>
+      <p class="requires">Hangar runs on macOS 15 or later on Apple silicon. The DMG is also on <a href="https://github.com/andreabasile/hangar/releases">GitHub Releases</a>; to build from source you need Xcode 27 or later, see the <a href="https://github.com/andreabasile/hangar#build-from-source">README</a>.</p>
     </section>
 
     <section aria-labelledby="private">

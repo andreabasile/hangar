@@ -1,0 +1,116 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+env:
+  APP_NAME: Hangar
+
+jobs:
+  build:
+    # Xcode 27 is the first whose `swift build` compiles String Catalogs, as in ci.yml
+    runs-on: xcode-27
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Setup Xcode
+        uses: maxim-lobanov/setup-xcode@ed7a3b1fda3918c0306d1b724322adc0b8cc0a90 # v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Get version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
+      - name: Run tests
+        run: swift test
+
+      - name: Set bundle version
+        run: |
+          plutil -replace CFBundleShortVersionString -string "${{ steps.get_version.outputs.VERSION }}" Resources/Info.plist
+          plutil -replace CFBundleVersion -string "$(git rev-list --count HEAD)" Resources/Info.plist
+
+      - name: Build app bundle
+        run: ./scripts/build-app.sh
+
+      - name: Create DMG
+        run: |
+          mkdir -p dmg_temp
+          cp -R "build/${{ env.APP_NAME }}.app" dmg_temp/
+          ln -s /Applications dmg_temp/Applications
+
+          hdiutil create -volname "${{ env.APP_NAME }}" \
+            -srcfolder dmg_temp \
+            -ov -format UDZO \
+            "${{ env.APP_NAME }}-${{ steps.get_version.outputs.VERSION }}.dmg"
+
+          rm -rf dmg_temp
+
+      - name: Calculate SHA256
+        id: sha256
+        run: |
+          SHA256=$(shasum -a 256 "${{ env.APP_NAME }}-${{ steps.get_version.outputs.VERSION }}.dmg" | cut -d' ' -f1)
+          echo "SHA256=${SHA256}" >> $GITHUB_OUTPUT
+          echo "SHA256: ${SHA256}"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
+        with:
+          files: ${{ env.APP_NAME }}-${{ steps.get_version.outputs.VERSION }}.dmg
+          body: |
+            ## Hangar v${{ steps.get_version.outputs.VERSION }}
+
+            ### Installation
+
+            **With Homebrew (recommended):**
+            ```bash
+            brew install --cask andreabasile/tap/hangar
+            ```
+
+            **Manually:**
+            1. Download the DMG below
+            2. Open it and drag Hangar into Applications
+            3. On first launch: right-click › Open (the app is not notarized)
+
+            ### SHA256
+            ```
+            ${{ steps.sha256.outputs.SHA256 }}
+            ```
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Without the token (forks, or before it is added) the release still goes out and the cask is updated by hand.
+      - name: Check tap token
+        id: tap
+        env:
+          TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+        run: |
+          if [[ -n "$TOKEN" ]]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::HOMEBREW_TAP_TOKEN is not set: update Casks/hangar.rb in andreabasile/homebrew-tap by hand"
+          fi
+
+      - name: Update Homebrew Tap
+        if: steps.tap.outputs.enabled == 'true'
+        uses: peter-evans/repository-dispatch@ff45666b9427631e3450c54a1bcbee4d9ff4d7c0 # v3
+        with:
+          token: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+          repository: andreabasile/homebrew-tap
+          event-type: update-cask
+          client-payload: |
+            {
+              "cask": "hangar",
+              "version": "${{ steps.get_version.outputs.VERSION }}",
+              "sha256": "${{ steps.sha256.outputs.SHA256 }}",
+              "url": "https://github.com/${{ github.repository }}/releases/download/v${{ steps.get_version.outputs.VERSION }}/${{ env.APP_NAME }}-${{ steps.get_version.outputs.VERSION }}.dmg"
+            }
