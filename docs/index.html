@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hangar: a macOS launcher for coding agents</title>
+<meta name="description" content="A native macOS app that opens Claude Code, Codex and 17 other coding-agent CLIs in your terminal, with your usual login, a separate account, or a model server you run yourself.">
+<meta property="og:title" content="Hangar: a macOS launcher for coding agents">
+<meta property="og:description" content="Open Claude Code, Codex and 17 other coding-agent CLIs with your login, a separate account, or your own model server.">
+<meta property="og:image" content="https://andreabasile.github.io/hangar/screenshot-light.png">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --paper: #f4f5f7;
+    --surface: #ffffff;
+    --ink: #1d2027;
+    --muted: #5f6672;
+    --rule: #dcdfe4;
+    --slate: #2b2f38;
+    --spark: #f5a01a;
+    --spark-text: #a15c00;
+    --code-bg: #e9ebef;
+    --measure: 66ch;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17191f;
+      --surface: #20232b;
+      --ink: #eceef2;
+      --muted: #9aa1ad;
+      --rule: #30343d;
+      --slate: #3a3f4b;
+      --code-bg: #262a33;
+      --spark-text: #f5a01a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  a:focus-visible, .button:focus-visible {
+    outline: 3px solid var(--spark);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  code, pre { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.86em; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+
+  header.bar { display: flex; align-items: center; justify-content: space-between; padding: 22px 0; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 650; font-size: 19px; text-decoration: none; }
+  .brand img { width: 36px; height: 36px; }
+  .bar nav a { color: var(--muted); text-decoration: none; margin-left: 22px; font-size: 15px; }
+  .bar nav a:hover { color: var(--ink); }
+
+  .hero { padding: 56px 0 40px; }
+  .hero h1 {
+    font-size: clamp(38px, 6.2vw, 64px);
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+    font-weight: 750;
+    margin: 0 0 22px;
+    max-width: 15ch;
+  }
+  .hero p { font-size: 20px; color: var(--muted); max-width: 52ch; margin: 0 0 30px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .button {
+    display: inline-block; padding: 11px 20px; border-radius: 10px;
+    font-weight: 600; font-size: 16px; text-decoration: none;
+  }
+  .button.primary { background: var(--slate); color: #fff; }
+  .button.secondary { background: var(--surface); border: 1px solid var(--rule); }
+
+  .shot { margin: 8px 0 0; }
+  .shot img {
+    display: block; width: 100%; height: auto; border-radius: 12px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.04), 0 24px 60px -20px rgba(20,24,33,.35);
+  }
+
+  section { padding: 72px 0 8px; }
+  h2 { font-size: 30px; letter-spacing: -0.02em; line-height: 1.15; margin: 0 0 14px; }
+  h3 { font-size: 19px; margin: 0 0 8px; }
+  .lede { color: var(--muted); max-width: var(--measure); margin: 0 0 32px; }
+
+  .modes { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  .modes p { margin: 0; max-width: 48ch; }
+
+  /* the fleet: each tool's badge in the colors the app's sidebar uses */
+  .fleet { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px 32px; }
+  .fleet h3 { font-size: 15px; color: var(--muted); font-weight: 600; margin-bottom: 14px; }
+  .fleet ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .fleet li { display: grid; grid-template-columns: 34px 1fr; column-gap: 12px; align-items: center; }
+  .badge {
+    width: 34px; height: 34px; border-radius: 9px; grid-row: span 2;
+    display: grid; place-items: center;
+    color: #fff; font-weight: 700; font-size: 13px; letter-spacing: -0.01em;
+    background: linear-gradient(160deg, var(--a), var(--b));
+  }
+  .fleet .name { font-weight: 600; line-height: 1.2; }
+  .fleet code { color: var(--muted); font-size: 13px; }
+  .fleet h3.later { margin-top: 32px; }
+  .tested { color: var(--spark-text); font-size: 13px; font-weight: 600; margin-left: 6px; }
+  .note { color: var(--muted); font-size: 15px; max-width: var(--measure); margin-top: 32px; }
+
+  ol.steps { padding: 0; margin: 0; list-style: none; counter-reset: step; display: grid; gap: 22px; max-width: 760px; }
+  ol.steps li { counter-increment: step; display: grid; grid-template-columns: 40px 1fr; }
+  ol.steps li::before {
+    content: counter(step);
+    width: 28px; height: 28px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--slate); color: #fff; font-weight: 700; font-size: 14px;
+  }
+  ol.steps p { margin: 2px 0 8px; }
+  pre {
+    margin: 0; padding: 14px 16px; border-radius: 10px;
+    background: var(--code-bg); overflow-x: auto; line-height: 1.5;
+  }
+  .requires { color: var(--muted); font-size: 15px; margin: 24px 0 0; max-width: var(--measure); }
+
+  ul.private { padding: 0; margin: 0; list-style: none; display: grid; gap: 16px; max-width: var(--measure); }
+  ul.private li { padding-left: 26px; position: relative; }
+  ul.private li::before {
+    content: ""; position: absolute; left: 4px; top: 0.62em;
+    width: 9px; height: 9px; transform: rotate(45deg); background: var(--spark);
+  }
+
+  footer { margin-top: 88px; padding: 28px 0 44px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+  footer p { margin: 0 0 6px; max-width: var(--measure); }
+
+  @media (max-width: 900px) {
+    .fleet { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px) {
+    .wrap { padding: 0 20px; }
+    .bar nav a:not(:last-child) { display: none; }
+    .hero { padding-top: 28px; }
+    .hero p { font-size: 18px; }
+    .modes, .fleet { grid-template-columns: 1fr; gap: 32px; }
+    .fleet .spacer { display: none; }
+    .fleet > div:first-child ul { margin-bottom: -20px; }
+    section { padding-top: 56px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="bar">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="36" height="36">Hangar</a>
+    <nav aria-label="Page">
+      <a href="#tools">Tools</a>
+      <a href="#build">Build</a>
+      <a href="https://github.com/andreabasile/hangar">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Launch your coding agents from one window.</h1>
+      <p>Hangar is a native macOS app that opens Claude Code, Codex and 17 other CLIs in your terminal: with your usual login, a separate account, or a model server you run yourself.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/andreabasile/hangar">View on GitHub</a>
+        <a class="button secondary" href="#build">Build it</a>
+      </div>
+    </div>
+
+    <figure class="shot">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="screenshot-dark.png">
+        <img src="screenshot-light.png" width="1720" height="1720"
+             alt="Hangar's window: a sidebar of presets, and a Claude Code preset pointed at a GPU server, with its model, context size and the command it will run.">
+      </picture>
+    </figure>
+
+    <section aria-labelledby="modes">
+      <h2 id="modes">Two ways to start an agent</h2>
+      <p class="lede">Each preset in the sidebar is one tool, started one way. Pick a working folder, press ⌘↩, and the terminal opens there.</p>
+      <div class="modes">
+        <div>
+          <h3>With an account</h3>
+          <p>Run the tool with the login you already use, or give a preset its own account. A separate account lives in its own folder, so your work login and your personal one never mix, and presets with the same account name share it.</p>
+        </div>
+        <div>
+          <h3>With your own model server</h3>
+          <p>Point the tool at LM Studio, llama-server, Ollama or a GPU machine in the cloud. Hangar writes the settings each tool expects, checks that the server answers, lists its models, and keeps waiting while a pod is still loading one.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" aria-labelledby="tools-title">
+      <h2 id="tools-title">19 tools, each with the options it supports</h2>
+      <p class="lede">Hangar finds which ones are installed and shows the install command for the rest.</p>
+      <div class="fleet">
+        <div>
+          <h3>Server and separate accounts</h3>
+          <ul>
+            <li><span class="badge" style="--a:#FF9E33;--b:#ED611A">Cl</span><span class="name">Claude Code<span class="tested">tested</span></span><code>claude</code></li>
+            <li><span class="badge" style="--a:#6B6BF5;--b:#4A45CC">Cx</span><span class="name">Codex<span class="tested">tested</span></span><code>codex</code></li>
+            <li><span class="badge" style="--a:#4AA8F0;--b:#2477C9">Co</span><span class="name">GitHub Copilot CLI</span><code>copilot</code></li>
+            <li><span class="badge" style="--a:#7A8BA3;--b:#52637A">Oc</span><span class="name">OpenCode</span><code>opencode</code></li>
+            <li><span class="badge" style="--a:#E5A422;--b:#B97A06">Ki</span><span class="name">Kilo CLI</span><code>kilo</code></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="spacer" aria-hidden="true">&nbsp;</h3>
+          <ul aria-label="Server and separate accounts, continued">
+            <li><span class="badge" style="--a:#F46EA0;--b:#D13D78">Cr</span><span class="name">Crush</span><code>crush</code></li>
+            <li><span class="badge" style="--a:#A174F2;--b:#7745D6">Qw</span><span class="name">Qwen Code</span><code>qwen</code></li>
+            <li><span class="badge" style="--a:#B08A63;--b:#7F5F3F">Go</span><span class="name">Goose</span><code>goose</code></li>
+            <li><span class="badge" style="--a:#4C6FE0;--b:#2C46A8">Km</span><span class="name">Kimi Code</span><code>kimi</code></li>
+            <li><span class="badge" style="--a:#2BB3A8;--b:#168077">π</span><span class="name">Pi</span><code>pi</code></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Server and your account</h3>
+          <ul>
+            <li><span class="badge" style="--a:#F2555A;--b:#C72E33">Vb</span><span class="name">Mistral Vibe</span><code>vibe</code></li>
+            <li><span class="badge" style="--a:#7B8494;--b:#565E6C">Dr</span><span class="name">Factory Droid</span><code>droid</code></li>
+          </ul>
+          <h3 class="later">Server only</h3>
+          <ul>
+            <li><span class="badge" style="--a:#4CC46A;--b:#2A9446">Ai</span><span class="name">Aider</span><code>aider</code></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Your account</h3>
+          <ul>
+            <li><span class="badge" style="--a:#5C8DF6;--b:#8B5CF6">Ge</span><span class="name">Gemini CLI</span><code>gemini</code></li>
+            <li><span class="badge" style="--a:#2CC3DA;--b:#1690A8">Cu</span><span class="name">Cursor CLI</span><code>cursor-agent</code></li>
+            <li><span class="badge" style="--a:#9BC02A;--b:#6E8F10">Am</span><span class="name">Amp</span><code>amp</code></li>
+            <li><span class="badge" style="--a:#C45CE6;--b:#9333C2">Kr</span><span class="name">Kiro CLI</span><code>kiro-cli</code></li>
+            <li><span class="badge" style="--a:#4F8A99;--b:#336473">Cn</span><span class="name">Cline</span><code>cline</code></li>
+            <li><span class="badge" style="--a:#E08A5E;--b:#B65F34">Au</span><span class="name">Auggie</span><code>auggie</code></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Claude Code and Codex have been tested against a mock model server. The other tools follow their documentation and source code, and Hangar marks them as experimental. Tools without separate accounts keep their login in places a folder cannot move, such as fixed Keychain entries.</p>
+    </section>
+
+    <section id="build" aria-labelledby="build-title">
+      <h2 id="build-title">Build it</h2>
+      <p class="lede">There is no download yet: build Hangar from source.</p>
+      <ol class="steps">
+        <li><div><p>Clone the repository.</p><pre><code>git clone https://github.com/andreabasile/hangar.git
+cd hangar</code></pre></div></li>
+        <li><div><p>Build the app, copy it to Applications and open it.</p><pre><code>./scripts/build-app.sh --install</code></pre></div></li>
+        <li><div><p>Pick a preset, choose a working folder and press ⌘↩.</p></div></li>
+      </ol>
+      <p class="requires">Requires macOS 15 or later and Xcode 16 or the matching Command Line Tools (Swift 6). The app is signed ad hoc on your Mac.</p>
+    </section>
+
+    <section aria-labelledby="private">
+      <h2 id="private">Your keys stay in their files</h2>
+      <ul class="private">
+        <li>A server preset stores the path to a key file, and the tool reads it when it starts. The key never appears in command arguments, in the files Hangar writes or in the command preview.</li>
+        <li>When they talk to your own server, Claude Code and Codex start without your hooks, plugins and MCP servers, and API keys exported by your shell are removed from Claude Code’s environment.</li>
+        <li>Presets live in one JSON file you can read and edit, and Hangar never overwrites a file it cannot parse.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hangar is open source under the MIT license. English, French, German, Italian and Spanish.</p>
+    <p>Not affiliated with Anthropic, OpenAI or the makers of the other tools; their names belong to their owners.</p>
+  </footer>
+</div>
+</body>
+</html>

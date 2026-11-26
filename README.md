@@ -1,5 +1,9 @@
 # Hangar
 
+[![CI](https://github.com/andreabasile/hangar/actions/workflows/ci.yml/badge.svg)](https://github.com/andreabasile/hangar/actions/workflows/ci.yml)
+![macOS 15+](https://img.shields.io/badge/macOS-15%2B-2b2f38)
+[![License: MIT](https://img.shields.io/badge/license-MIT-2b2f38)](LICENSE)
+
 Hangar is a small native macOS app that launches coding agents in your terminal from presets:
 [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [OpenAI Codex](https://github.com/openai/codex) and
 seventeen more CLIs (see [Supported tools](#supported-tools)). A preset either uses the tool's own login (your default
@@ -7,10 +11,25 @@ account, or a separate one kept apart from it) or points the tool at a model ser
 llama-server, Ollama, or a GPU machine somewhere else. Hangar writes the settings each tool needs, checks
 that the server answers, and opens a terminal in the folder you pick.
 
+**Website:** [andreabasile.github.io/hangar](https://andreabasile.github.io/hangar/)
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/screenshot-dark.png">
   <img alt="Hangar's main window: a preset with its server, model and the command it runs" src="docs/screenshot-light.png" width="760">
 </picture>
+
+## Features
+
+- **One window for every agent.** Each preset is one tool started one way; pick a folder and press ⌘↩.
+- **Accounts kept apart.** Run a tool with your usual login, or give a preset a separate account with its own folder,
+  so a work login and a personal one never mix.
+- **Your own model server.** Point Claude Code, Codex and eleven other tools at LM Studio, llama-server, Ollama or a
+  cloud GPU. Hangar checks the server, lists its models and keeps waiting while a pod is still loading.
+- **Keys stay in their files.** Hangar passes the path of a key file; the key never shows up in arguments, generated
+  files or the command preview.
+- **Plain JSON config** you can edit by hand, reloaded as soon as you save it.
+- **Terminal, Warp or any command** to open the session.
+- **In English, French, German, Italian and Spanish.**
 
 ## Requirements
 
@@ -23,19 +42,24 @@ that the server answers, and opens a terminal in the folder you pick.
 
 ## Build and install
 
+There is no prebuilt download yet. Clone the repository and build the app:
+
 ```sh
+git clone https://github.com/andreabasile/hangar.git
+cd hangar
 ./scripts/build-app.sh            # builds build/Hangar.app
 ./scripts/build-app.sh --install  # also copies it to /Applications and opens it
 ```
 
-The app is signed ad hoc. To sign with your own identity, set `HANGAR_SIGN_IDENTITY` to its name.
+The app is signed ad hoc, which is enough to run it on the Mac that built it. To sign with your own identity, set
+`HANGAR_SIGN_IDENTITY` to its name.
 
 ## Presets
 
 Each preset in the sidebar is one way to start an agent: a tool, a mode, an optional model and extra arguments.
 
-- **Account mode** runs the tool as you normally would, with its own login. *Predefinito* is your usual account.
-  *Separato* gives the account a name and its own folder, `~/.config/hangar/accounts/<tool>/<name>`: on first launch
+- **Account mode** runs the tool as you normally would, with its own login. *Default* is your usual account.
+  *Separate* gives the account a name and its own folder, `~/.config/hangar/accounts/<tool>/<name>`: on first launch
   the tool asks you to sign in, and it starts without your usual settings, MCP servers and plugins. Presets with the
   same tool and account name share the login.
 - **Server mode** points the tool at a model server: its root (`http://localhost:1234`, without `/v1`), its
@@ -47,7 +71,20 @@ the URL is complete (on Return, when you leave the field, or on a paste), so the
 If the server is still starting
 (a pod downloading its model, for example) it keeps checking every 10 seconds for up to 30 minutes. The models it
 reports can be picked from the menu next to the model field. Choose the working folder in the bottom bar, then press
-**Avvia** (⌘↩).
+**Launch** (⌘↩).
+
+### Keyboard shortcuts
+
+| Shortcut | Action |
+|---|---|
+| ⌘N | New preset |
+| ⌘D | Duplicate the preset |
+| ⌫ | Delete the preset |
+| ⌘L | Edit the server URL |
+| ⌘R | Test the connection |
+| ⇧⌘C | Copy the command |
+| ⌘↩ | Launch |
+| ⌘, | Settings: language, configuration folder, terminal |
 
 ### Config file
 
@@ -182,7 +219,7 @@ Some tools still write under your home folder whatever Hangar sets:
 
 - The key is read from its file at launch time and never written into any file Hangar creates, nor into an environment
   variable: Codex gets it from its provider's auth command and Claude Code from an `apiKeyHelper`, both running
-  `cat <key file>`. The command preview and "Copia comando" show only the file path.
+  `cat <key file>`. The command preview and "Copy Command" show only the file path.
 - Generated scripts and settings live in `~/.config/hangar/generated/` (mode 700). The command drops
   `ANTHROPIC_API_KEY`, `ANTHROPIC_AUTH_TOKEN` and the `CLAUDE_CODE_USE_BEDROCK/VERTEX/FOUNDRY` switches from the tool's
   environment, so a key exported by your shell is never sent to the model server.
@@ -199,20 +236,26 @@ Some tools still write under your home folder whatever Hangar sets:
   so an inherited value cannot switch accounts. A separate account's folder (mode 700) is always passed as the same
   absolute path.
 
-## Tests
+## Development
 
 ```sh
-swift test
+swift test                         # unit tests (HangarCore)
+swift run Hangar                   # run from source, in English
+swift run Hangar --snapshot <dir>  # render the main views to PNG, from a built-in sample config
 ```
 
-`swift run Hangar --snapshot <folder>` renders the main views to PNG offscreen, from a built-in sample config.
+The code is split in two targets: `HangarCore` (tools, launch recipes, config, connection checks, terminal launch;
+everything that is tested) and `Hangar` (the SwiftUI app). `docs/` holds the screenshots and the website, served by
+GitHub Pages.
 
 ## Languages
 
-The app is in English and Italian and follows the system language; other languages fall back to English. The strings
-live in two String Catalogs, `Sources/HangarCore/Localizable.xcstrings` and `Sources/Hangar/Localizable.xcstrings`,
-each key with both languages; a test fails if one lacks a translation or changes a placeholder. SwiftPM compiles
-them; `scripts/build-app.sh` puts them in the app. To see the app, or the snapshots, in one language:
+The app is in English, French, German, Italian and Spanish. It follows the system language unless you pick one in
+Settings › General (the same choice as System Settings › General › Language & Region › Applications); other languages
+fall back to English. The strings live in two String Catalogs, `Sources/HangarCore/Localizable.xcstrings` and
+`Sources/Hangar/Localizable.xcstrings`, each key in every language; a test fails if one lacks a translation or
+changes a placeholder. SwiftPM compiles them; `scripts/build-app.sh` puts them in the app. To see the app, or the
+snapshots, in one language:
 
 ```sh
 open build/Hangar.app --args -AppleLanguages '(it)'
@@ -221,6 +264,15 @@ build/Hangar.app/Contents/MacOS/Hangar --snapshot <folder> -AppleLanguages '(en)
 
 `swift run` alone always shows English, since the bare binary carries no translations of its own.
 
+## Contributing
+
+Issues and pull requests are welcome. For a new tool, add it to `Tool` and its launch recipe in `Commands.swift`, with
+a test in `ToolTemplateTests`; for a new language, add it to both String Catalogs and to `CFBundleLocalizations` in
+`Resources/Info.plist`. Run `swift test` before opening a pull request.
+
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+Hangar is not affiliated with Anthropic, OpenAI or the makers of the other tools it launches; their names and
+trademarks belong to their owners.
